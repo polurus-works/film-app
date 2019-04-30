@@ -1,0 +1,256 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font: 14px/22px arial;
+}
+
+
+
+#header {
+  background-color: #03a9f4;
+  overflow: hidden;
+  box-shadow: 0 12px 12px #ccc;
+}
+
+#header ul {
+  list-style: none;
+}
+
+#header ul li{
+  float: left;
+}
+
+#header ul li a {
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+#header ul li a.logo {
+  background-color: #1d5d4c;
+}
+
+#banner {
+  padding: 20px 20px;
+  background-color: #fff;
+  overflow: hidden;
+}
+#carousel {
+  position: absolute;
+  height: 250px;
+  width: 960px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.arrow {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #f00;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  color: #228291;
+  line-height: 30px;
+  margin-top: 85px;
+  z-index: 1000;
+}
+
+.arrow-right {
+  left: 850px;
+}
+
+.item {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  transition: height 1s, width 1s, left 1s, margin-top 1s, line-height 1s, background-color 1s;
+}
+
+.item a {
+  text-decoration: none;
+  color: #fff;
+}
+.level-2 {
+ 
+  width: 210px;
+  height: 150px;
+  padding-top: 50px;
+  background-color: #228291;
+  left: 575px;
+    margin-top: 20px;
+    z-index: -9999;
+}
+
+.level-1 {
+  
+  width: 230px;
+  height: 180px;
+  padding-top: 50px;
+  background-color: #6796E5;
+  left: 460px;
+  z-index: -999;
+  margin-top: 10px;
+}
+
+.level0 {
+  
+  width: 250px;
+  height: 200px;
+  background-color: #4EC9E1;
+  padding-top: 50px;
+  left: 330px;
+}
+
+.level1 {
+  
+  width: 230px;
+  height: 180px;
+  padding-top: 50px;
+  background-color: #6796E5;
+  margin-top: 10px;
+  left: 220px;
+}
+
+.level2 {
+  
+  width: 210px;
+  height: 150px;
+  padding-top: 50px;
+  background-color: #228291;
+  margin-top: 20px;
+  left: 110px;
+}
+
+.left-enter {
+  opacity: 0;
+  left: -60px;
+  
+  width: 190px;
+  
+ 
+}
+
+.left-enter.left-enter-active {
+  opacity: 1;
+  left: 50px;
+  
+  width: 210px;
+  height: 150px;
+  padding-top: 50px;
+  transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
+}
+
+.left-leave {
+  opacity: 1;
+  left: 650px;
+  height: 150px;
+  width: 210px;
+  padding-top: 50px;
+  
+}
+
+.left-leave.left-leave-active {
+  left: 780px;
+  opacity: 0;
+  
+  
+ 
+  width: 190px;
+  transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
+}
+
+.right-enter {
+  opacity: 0;
+  left: 760px;
+  
+  width: 190px;
+  
+ 
+}
+
+.right-enter.right-enter-active {
+  left: 650px;
+  opacity: 1;
+  height: 150px;
+  
+  padding-top: 50px;
+  width: 210px;
+  transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
+}
+
+.right-leave {
+  left: 50px;
+  height: 150px;
+  opacity: 1;
+  
+  padding-top: 50px;
+  width: 210px;
+}
+
+.right-leave.right-leave-active {
+  left: -60px;
+  opacity: 0;
+  
+  width: 190px;
+  
+  
+  transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
+}
+
+.characters {
+  padding: 20px 0;
+  color: #ffeb3b;
+  font-size: 14px;
+}
+

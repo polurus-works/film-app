@@ -1,2 +1,11 @@
-# film-app
-film app with carousel effect built with react
+Run these commands:
+Install dependencies from package json
+npm install
+
+start project
+npm start
+
+test project (Basic testing done)
+npm test
+
+
