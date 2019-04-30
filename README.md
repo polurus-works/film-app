@@ -1,11 +1,11 @@
-Run these commands:
+Run these commands:<br/>
 Install dependencies from package json
-npm install
+<pre><code>npm install</code></pre>
 
 start project
-npm start
+<pre><code>npm start</code></pre>
 
 test project (Basic testing done)
-npm test
+<pre><code>npm test</code></pre>
 
 
